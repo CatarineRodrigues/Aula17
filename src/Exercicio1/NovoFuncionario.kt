@@ -1,3 +1,5 @@
+import Exercicio1.Funcionario
+
 fun main() {
     var novoFuncionario: Funcionario = Funcionario()
     novoFuncionario.nome = "Luis"
@@ -85,26 +87,31 @@ fun novosFuncionarios() {
 
 
 // função para cadastrar vários funcionários = teste
-/*
+
 fun variosFuncionarios() {
     println("Quantos funcionários quer inserir?")
     val qnt = readln().toInt()
     var i = 0
-    while (i < qnt ) {
+    while (i <= qnt ) {
         var outroFuncionario: Funcionario = Funcionario()
         println("Digite o nome do ${i + 1}º funcionário")
         outroFuncionario.nome = readln()
+
         println("Digite o sobrenome do ${i + 1}º funcionário")
         outroFuncionario.sobrenome = readln()
+
         println("Digite a quantidade de horas trabalhadas pelo ${i + 1}º funcionário")
         outroFuncionario.horasTrabalhadas = readln().toInt()
+
         println("Digite o valor da hora pago ao ${i + 1}º funcionário")
         outroFuncionario.valorPorHora = readln().toFloat()
+
         println("Quantidade de horas extras trabalhadas?")
         var horaExtra = readln().toInt()
 
         outroFuncionario.nomeCompleto()
         outroFuncionario.calcularSalario()
+
         if (horaExtra > 0) {
             outroFuncionario.incrementarHoras(horaExtra)
             outroFuncionario.calcularSalario()
@@ -112,4 +119,3 @@ fun variosFuncionarios() {
         i++
     }
 }
-*/

@@ -1,6 +1,4 @@
-/*1. Crie uma classe Funcionario que obedeça à descrição abaixo:
-
- */
+package Exercicio1
 class Funcionario {
     var nome: String = ""
     var sobrenome: String = ""

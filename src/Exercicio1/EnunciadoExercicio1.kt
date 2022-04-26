@@ -1,6 +1,8 @@
+package Exercicio1
+
 /* Exercícios - Orientação a Objetos
 
-1. Crie uma classe Funcionario que obedeça à descrição abaixo:
+1. Crie uma classe Exercicio1.Funcionario que obedeça à descrição abaixo:
 a. A classe possui os atributos nome, sobrenome,
 horasTrabalhadas e valorPorHora
 
@@ -15,7 +17,7 @@ d. O método incrementarHoras adiciona um valor passado por
 parâmetro ao valor já existente no atributo horasTrabalhadas
 
 Crie o método main e instancie a classe Funcionário criada, criando um
-objeto novoFuncionario do tipo Funcionario:
+objeto novoFuncionario do tipo Exercicio1.Funcionario:
 
 - Atribua o valor “Luis” ao atributo nome.
 - Atribua o valor “Silva” ao atributo sobrenome.
