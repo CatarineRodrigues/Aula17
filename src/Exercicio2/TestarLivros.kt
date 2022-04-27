@@ -1,12 +1,5 @@
 package Exercicio2
 
-class TestarLivros {
-}
-
-/*
-- Instancie outros 10 livros no método main e chame os métodos
-desenvolvidos, conforme o exemplo anterior. */
-
 fun main() {
     var livroFavorito: Livros = Livros()
     livroFavorito.titulo = "O Pequeno Príncipe"
@@ -17,17 +10,25 @@ fun main() {
     livroFavorito.paginasLidas = 50
     livroFavorito.verificarProgresso()
 
-    println("--------------------------")
+    novosLivros()
+}
 
-    livroFavorito.adicionarLivros(
-        "O Pequeno Príncipe",
-        98,
-        50
-    )
+fun novosLivros() {
+    println("\n---------Novos Livros------------\n")
 
-    var listaLivros = livroFavorito.inserirLivrosNaLista(livroFavorito)
+    var livrosNovos = ArrayList<Livros>()
+    livrosNovos.add(Livros("As crônicas de Nárnia", 400, 20))
+    livrosNovos.add(Livros("Turma da mônica", 40, 40))
+    livrosNovos.add(Livros("Senhor dos Anéis", 280, 0))
+    livrosNovos.add(Livros("O Hobbit", 300, 0))
+    livrosNovos.add(Livros("Jogos Vorazes", 320, 320))
+    livrosNovos.add(Livros("Em Chamas", 290, 290))
+    livrosNovos.add(Livros("A Esperança", 400, 400))
+    livrosNovos.add(Livros("Clean Code", 20, 20))
+    livrosNovos.add(Livros("Interestelar", 300, 0))
 
-    livroFavorito.exibirListaLivros(listaLivros)
-
-
+    livrosNovos.forEach {
+        it.exibirQntPaginasLivro()
+        it.verificarProgresso()
+    }
 }
