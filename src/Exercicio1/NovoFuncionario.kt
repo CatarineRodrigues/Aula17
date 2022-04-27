@@ -87,7 +87,7 @@ fun novosFuncionarios() {
 
 
 // função para cadastrar vários funcionários = teste
-
+/*
 fun variosFuncionarios() {
     println("Quantos funcionários quer inserir?")
     val qnt = readln().toInt()
@@ -119,3 +119,4 @@ fun variosFuncionarios() {
         i++
     }
 }
+*/

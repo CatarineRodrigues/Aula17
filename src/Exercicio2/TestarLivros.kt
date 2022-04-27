@@ -12,9 +12,21 @@ fun main() {
     livroFavorito.titulo = "O Pequeno Príncipe"
     livroFavorito.qtdPaginas = 98
 
-    livroFavorito.exibirQndPaginasLivro()
+    livroFavorito.exibirQntPaginasLivro()
 
     livroFavorito.paginasLidas = 50
     livroFavorito.verificarProgresso()
+
+    println("--------------------------")
+
+    livroFavorito.adicionarLivros(
+            "O Pequeno Príncipe",
+            98,
+        50 )
+
+    var listaLivros = livroFavorito.inserirLivrosNaLista(livroFavorito)
+
+    livroFavorito.exibirListaLivros(listaLivros)
+
 
 }
